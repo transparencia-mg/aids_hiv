@@ -15,80 +15,295 @@ resources:
       fields:
         - name: id_agravo
           type: string
+          title: ID do Agravo
+          description: ID do Agravo
         - name: dt_notific
           type: date
+          title:  Data de Notificação
+          description: Data de Notificação
         - name: nu_ano
           type: integer
+          title: Ano de Notificação
+          description: Ano de Notificação
         - name: id_municip
           type: string
-        - name: dt_diag
+          title:  Município de Notificação
+          description: Município de Notificação
+        - name: dt_diag 
           type: date
+          title:  Data de Diagnóstico
+          description: Data de Diagnóstico
         - name: dt_nasc
           type: date
+          title: Data de Nascimento
+          description: Data de Nascimento
         - name: nu_idade_n
           type: geopoint
+          title: Idade
+          description: Idade
         - name: cs_sexo
           type: string
+          description: Sexo
+          constraints:
+             enum:
+               - 'Feminino'
+               - 'Masculino'
+               - 'Ignorado'
         - name: cs_gestant
           type: string
+          description: Gestante
+          constraints:
+             enum:
+               - '1° Trimestre'
+               - '2° Trimestre'
+               - '3° Trimestre'
+               - 'Idade gestacional ignorada'
+               - 'Não'
+               - 'Não se aplica'
+               - 'Ignorado'
         - name: cs_raca
           type: string
+          title: Raça/Cor
+          description: Raça/Cor
+          constraints:
+             enum:
+               - 'Branca'
+               - 'Preta'
+               - 'Amarela'
+               - 'Parda'
+               - 'Indígena'
+               - 'Ignorado
         - name: cs_escol_n
           type: string
+          title: Escolaridade
+          description: Escolaridade
+          constraints:
+            enum:
+              - 'Analfabeto'
+              - '1ª a 4ª série incompleta do EF'
+              - '4ª série completa EF'
+              - '5ª a 8ª série incompleta do EF'
+              - 'Ensino fundamental completo'
+              - 'Ensino médio incompleto'
+              - 'Ensino médio completo'
+              - 'Educação superior incompleta'
+              - 'Educação superior completa'
+              - 'Ignorado'
+              - 'Não se aplica'
         - name: id_mn_resi
           type: string
+          title: Município de Residência
+          description: Município de Residência
         - name: ant_trasmi
           type: string
+          title:  Modo de transmissão: mãe para filho
+          description: Modo de transmissão: mãe para filho
         - name: antrelse_n
           type: string
+          title: Modo de transmissão: sexual
+          description: Modo de transmissão: sexual
+          constraints:
+            enum:
+              - 'Relações sexuais com Homens'
+              - 'Relações sexuais com Mulheres'
+              - 'Relações sexuais com homens e mulheres'
+              - 'Não foi transmissão sexual'
+              - 'Ignorado'
         - name: ant_droga
           type: string
+          title:  Modo de transmissão: drogas injetáveis
+          description: Provável modo de transmissão do HIV: uso de drogas injetáveis
+          constraints:
+            enum:
+              - 'Sim'
+              - 'Não'
+              - 'ignorado'
         - name: lab_triage
           type: string
+          title: Teste de Triagem
+          description: Evidência laboratorial de infecção pelo HIV
+          constraints:
+            enum:
+              - 'Positivo/Reagente'
+              - 'Negativo/Não reagente'
+              - 'Inconclusivo'
+              - 'Não realizado'
+              - 'ignorado'
         - name: ant_tuberc
           type: string
+          title:  Tuberculose disseminada/ extrapulmonar/ não cavitária
+          description: uberculose disseminada/ extrapulmonar/ não cavitária
+          constraints:
+            enum:
+              - 'Sim'
+              - 'Não'
+              - 'ignorado'
         - name: ant_candid
           type: string
+          title: Candidíase Oral ou Leucoplasia Pilosa
+          description: Candidíase Oral ou Leucoplasia Pilosa
+          constraints:
+            enum:
+              - 'Sim'
+              - 'Não'
+              - 'ignorado'
         - name: ant_pulmon
           type: string
+          title: Tuberculose pulmonar cavitária ou não especificada
+          description: Tuberculose pulmonar cavitária ou não especificada
+          constraints:
+            enum:
+              - 'Sim'
+              - 'Não'
+              - 'ignorado'
         - name: ant_herpes
           type: string
+          title: Herpes Zoster
+          description: Herpes Zoster em indivíduo menor ou igual a 60 anos
+          constraints:
+            enum:
+              - 'Sim'
+              - 'Não'
+              - 'ignorado'
         - name: ant_disfun
           type: string
+          title: Disfunção do sistema nervoso central
+          description: Disfunção do sistema nervoso central
+          constraints:
+            enum:
+              - 'Sim'
+              - 'Não'
+              - 'ignorado'
         - name: ant_diarre
           type: string
+          title: Diarreia
+          description: Diarreia igual ou maior que um 1 mês
+          constraints:
+            enum:
+              - 'Sim'
+              - 'Não'
+              - 'ignorado'
         - name: ant_febre
           type: string
+          title: Febre
+          description: Febre maior ou igual 38º C, por tempo maior ou igual a 1 mês
+          constraints:
+            enum:
+              - 'Sim'
+              - 'Não'
+              - 'ignorado'
         - name: ant_caquex
           type: string
+          title: Caquexia
+          description: Caquexia ou pedra de peso maior que 10%
+          constraints:
+            enum:
+              - 'Sim'
+              - 'Não'
+              - 'ignorado'
         - name: ant_asteri
           type: string
+          title: Astenia
+          description: Astenia maior ou igual a 1 mês - Excluída a tuberculose como causa
+          constraints:
+            enum:
+              - 'Sim'
+              - 'Não'
+              - 'ignorado'
         - name: ant_dermat
           type: string
+          title: Astenia 
+          description: Astenia maior ou igual a 1 mês
+          constraints:
+            enum:
+              - 'Sim'
+              - 'Não'
+              - 'ignorado'
         - name: ant_anemia
           type: string
+          title: Anemia e/ou linfopenia e/ou trombocitopenia
+          description: Anemia e/ou linfopenia e/ou trombocitopenia
+          constraints:
+            enum:
+              - 'Sim'
+              - 'Não'
+              - 'ignorado'
         - name: ant_tosse
           type: string
+          title: Tosse persistente
+          description: Tosse persistente ou qualquer pneumonia - Excluída a tuberculose como causa
         - name: ant_linfo
           type: string
+          title:  Linfadenopatia
+          description: Linfadenopatia maior ou igual a 1 cm, maior ou igual a 2 sítios extrainquinais por tempo maior ou igual a 1 mês
         - name: ant_esof_n
           type: string
+          title: Candidose
+          description: Candidose (esôfago, traqueia, brônquios, pulmão)
         - name: ant_pneumo
           type: string
+          title: Pneumonia
+          description: Pneumonia
         - name: ant_toxo
           type: string
+          title: Toxoplasmose cerebral
+          description: Toxoplasmose cerebral
         - name: ant_contag
           type: string
+          title: Contagem de linfócitos T CD4+ menor que 350 cel/mm3
+          description: Contagem de linfócitos T CD4+ menor que 350 cel/mm3
         - name: def_diagno
           type: string
+          title: Contagem de linfócitos T CD4+ menor que 350 cel/mm3
+          description: Contagem de linfócitos T CD4+ menor que 350 cel/mm3
         - name: dt_obito
           type: any
+          title:  Data de Óbito
+          description: Data de Óbito
         - name: evolucao
           type: string
+          title: Evolução do caso
+          description: Evolução do caso
+          constraints:
+            enum:
+              - 'Vivo'
+              - 'Óbito por Aids'
+              - 'Óbito por outras causas'
+              - 'Ignorado'
         - name: criterio
           type: string
+          title: Critério
+          description: Critério de definição do caso
+          constraints:
+            enum:
+              - 'CDC adaptado'
+              - 'Rio de Janeiro/Caracas'
+              - 'Critério óbito'
+              - 'Descartado'
+              - 'HIV+'
         - name: ant_rel_ca
           type: string
+          title: Categoria de exposição
+          description: Categoria de exposição
+          constraints:
+            enum:
+              - 'Homossexual'
+              - 'Homo/Drogas'
+              - 'Homo/Hemofílico'
+              - 'Homo/Transfusão'
+              - 'Homo/Droga/Hemofílico'
+              - 'Homo/Droga/Transfusão'
+              - 'Bissexual'
+              - 'Bi/Drogas'
+              - 'Bi/Hemofílico'
+              - 'Bi/Transfusão'
+              - 'Bi/Droga/Hemofílico'
+              - 'Bi/Droga/Transfusão'
+              - 'Heterossexual'
+              - 'Hetero/Droga'
+              - 'Hetero/Hemofílico'
+              - 'Hetero/Transfusão'
+              - 'Hetero/Droga/Hemofílico'  
     scheme: file
-    title: Insira um título humanamente legível para este recurso.
-title: Aids_hiv
+    title: Dados de Aids - HIV
+title: Dados de Aids - HIV
