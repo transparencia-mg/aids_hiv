@@ -1,0 +1,178 @@
+{
+  "name": "aids_hiv",
+  "owner_org": "secretaria-de-estado-de-saude-ses",
+  "profile": "data-package",
+  "resources": [
+    {
+      "description": "Insira a descrição/explicação detalhada deste recurso.",
+      "dialect": {
+        "delimiter": ";"
+      },
+      "encoding": "utf-8-sig",
+      "format": "csv",
+      "hashing": "md5",
+      "name": "dados_aids_hiv",
+      "path": "data/dados_aids_hiv.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "id_agravo",
+            "type": "string"
+          },
+          {
+            "name": "dt_notific",
+            "type": "date"
+          },
+          {
+            "name": "nu_ano",
+            "type": "integer"
+          },
+          {
+            "name": "id_municip",
+            "type": "string"
+          },
+          {
+            "name": "dt_diag",
+            "type": "date"
+          },
+          {
+            "name": "dt_nasc",
+            "type": "date"
+          },
+          {
+            "name": "nu_idade_n",
+            "type": "geopoint"
+          },
+          {
+            "name": "cs_sexo",
+            "type": "string"
+          },
+          {
+            "name": "cs_gestant",
+            "type": "string"
+          },
+          {
+            "name": "cs_raca",
+            "type": "string"
+          },
+          {
+            "name": "cs_escol_n",
+            "type": "string"
+          },
+          {
+            "name": "id_mn_resi",
+            "type": "string"
+          },
+          {
+            "name": "ant_trasmi",
+            "type": "string"
+          },
+          {
+            "name": "antrelse_n",
+            "type": "string"
+          },
+          {
+            "name": "ant_droga",
+            "type": "string"
+          },
+          {
+            "name": "lab_triage",
+            "type": "string"
+          },
+          {
+            "name": "ant_tuberc",
+            "type": "string"
+          },
+          {
+            "name": "ant_candid",
+            "type": "string"
+          },
+          {
+            "name": "ant_pulmon",
+            "type": "string"
+          },
+          {
+            "name": "ant_herpes",
+            "type": "string"
+          },
+          {
+            "name": "ant_disfun",
+            "type": "string"
+          },
+          {
+            "name": "ant_diarre",
+            "type": "string"
+          },
+          {
+            "name": "ant_febre",
+            "type": "string"
+          },
+          {
+            "name": "ant_caquex",
+            "type": "string"
+          },
+          {
+            "name": "ant_asteri",
+            "type": "string"
+          },
+          {
+            "name": "ant_dermat",
+            "type": "string"
+          },
+          {
+            "name": "ant_anemia",
+            "type": "string"
+          },
+          {
+            "name": "ant_tosse",
+            "type": "string"
+          },
+          {
+            "name": "ant_linfo",
+            "type": "string"
+          },
+          {
+            "name": "ant_esof_n",
+            "type": "string"
+          },
+          {
+            "name": "ant_pneumo",
+            "type": "string"
+          },
+          {
+            "name": "ant_toxo",
+            "type": "string"
+          },
+          {
+            "name": "ant_contag",
+            "type": "string"
+          },
+          {
+            "name": "def_diagno",
+            "type": "string"
+          },
+          {
+            "name": "dt_obito",
+            "type": "any"
+          },
+          {
+            "name": "evolucao",
+            "type": "string"
+          },
+          {
+            "name": "criterio",
+            "type": "string"
+          },
+          {
+            "name": "ant_rel_ca",
+            "type": "string"
+          }
+        ]
+      },
+      "scheme": "file",
+      "title": "Insira um título humanamente legível para este recurso."
+    }
+  ],
+  "title": "Aids_hiv"
+}
