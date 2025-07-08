@@ -75,7 +75,7 @@ resources:
           description: Município de Residência
         - name: ant_trasmi
           type: string
-          title:  Modo de transmissão: mãe para filho
+          title: Modo de transmissão: mãe para filho
           description: Modo de transmissão: mãe para filho
         - name: antrelse_n
           type: string
@@ -110,7 +110,7 @@ resources:
               - 'ignorado'
         - name: ant_tuberc
           type: string
-          title:  Tuberculose disseminada/ extrapulmonar/ não cavitária
+          title: Tuberculose disseminada/ extrapulmonar/ não cavitária
           description: uberculose disseminada/ extrapulmonar/ não cavitária
           constraints:
             enum:
