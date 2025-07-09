@@ -90,8 +90,8 @@ resources:
               - 'Ignorado'
         - name: ant_droga
           type: string
-          title:  Modo de transmissão: drogas injetáveis
-          description: Provável modo de transmissão do HIV: uso de drogas injetáveis
+          title:  Modo de transmissão- drogas injetáveis
+          description: Provável modo de transmissão do HIV- uso de drogas injetáveis
           constraints:
             enum:
               - 'Sim'
