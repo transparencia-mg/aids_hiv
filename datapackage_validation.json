@@ -5,7 +5,6 @@
   "tasks": [
     {
       "resource": {
-        "description": "A vigilância da infecção pelo HIV e da Aids está baseada em um modelo de vigilância da infecção pelo HIV, do adoecimento (Aids) e da ocorrência de óbito.",
         "dialect": {
           "delimiter": ";"
         },
@@ -437,7 +436,7 @@
           "rows": 0
         }
       },
-      "time": 0.174,
+      "time": 0.173,
       "scope": [
         "hash-count-error",
         "byte-count-error",
