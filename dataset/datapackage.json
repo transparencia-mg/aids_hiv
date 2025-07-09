@@ -90,7 +90,17 @@
             "name": "cs_raca",
             "type": "string",
             "title": "Raça/Cor",
-            "description": "Raça/Cor"
+            "description": "Raça/Cor",
+            "constraints": {
+              "enum": [
+                "Branca",
+                "Preta",
+                "Amarela",
+                "Parda",
+                "Indígena",
+                "Ignorado"
+              ]
+            }
           },
           {
             "name": "cs_escol_n",
