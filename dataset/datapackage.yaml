@@ -2,8 +2,7 @@ name: aids_hiv
 owner_org: secretaria-de-estado-de-saude-ses
 profile: data-package
 resources:
-  - description: A vigilância da infecção pelo HIV e da Aids está baseada em um modelo de vigilância da infecção pelo HIV, do adoecimento (Aids) e da ocorrência de óbito.
-    dialect:
+  - dialect:
       delimiter: ;
     encoding: utf-8-sig
     format: csv
