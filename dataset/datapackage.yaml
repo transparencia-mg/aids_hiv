@@ -75,12 +75,12 @@ resources:
           description: Município de Residência
         - name: ant_trasmi
           type: string
-          title: Modo de transmissão: mãe para filho
-          description: Modo de transmissão: mãe para filho
+          title: Modo de transmissão- mãe para filho
+          description: Modo de transmissão - mãe para filho
         - name: antrelse_n
           type: string
-          title: Modo de transmissão: sexual
-          description: Modo de transmissão: sexual
+          title: Modo de transmissão - sexual
+          description: Modo de transmissão - sexual
           constraints:
             enum:
               - 'Relações sexuais com Homens'
