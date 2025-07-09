@@ -4,7 +4,7 @@
   "profile": "data-package",
   "resources": [
     {
-      "description": "Insira a descrição/explicação detalhada deste recurso.",
+      "description": "A vigilância da infecção pelo HIV e da Aids está baseada em um modelo de vigilância da infecção pelo HIV, do adoecimento (Aids) e da ocorrência de óbito.",
       "dialect": {
         "delimiter": ";"
       },
