@@ -1,6 +1,6 @@
 {
   "version": "4.16.6",
-  "time": 0.203,
+  "time": 0.204,
   "errors": [],
   "tasks": [
     {
@@ -91,7 +91,17 @@
               "name": "cs_raca",
               "type": "string",
               "title": "Raça/Cor",
-              "description": "Raça/Cor"
+              "description": "Raça/Cor",
+              "constraints": {
+                "enum": [
+                  "Branca",
+                  "Preta",
+                  "Amarela",
+                  "Parda",
+                  "Indígena",
+                  "Ignorado"
+                ]
+              }
             },
             {
               "name": "cs_escol_n",
@@ -412,7 +422,7 @@
           "rows": 0
         }
       },
-      "time": 0.174,
+      "time": 0.176,
       "scope": [
         "hash-count-error",
         "byte-count-error",
